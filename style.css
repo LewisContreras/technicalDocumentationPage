@@ -3,3 +3,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    color: gray;
+}
+
+#navbar{
+    background-color: azure;
+    min-width: 300px;
+    max-height: 100vh;
+    position: fixed;
+}
+
+#navbar header{
+    max-height: 8vh;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    color: black;
+} 
+
+#navbar ul{
+    overflow-y: scroll;
+    max-height: 92vh;
+
+}
+
+#navbar li{
+    border-top: 1px solid black;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: gray;
+}
+
+main{
+    padding:30px 30px 30px 330px;
+}
+
+.main-section header{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.main-section article{
+    margin-left: 20px;
+}
+
+.main-section p, .main-section li{
+    margin-bottom: 15px;
+    line-height: 1.2em;
+}
+
+.main-section ul{
+    padding-left: 50px;
+}
+
+.main-section code{
+    display: block;
+    background-color: rgb(235, 231, 231);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-line;
+    line-height: 2em;
+}
+
+@media (max-width: 800px){
+    body{
+        flex-direction: column;
+    }
+
+    #navbar{
+        background-color: azure;
+        min-width: 300px;
+        max-height: 40vh;
+        position: static;
+    }
+    #navbar ul{
+        overflow-y: scroll;
+        max-height: 32vh; 
+        border-bottom: 3px solid gray;
+    }
+    main{
+        padding:30px;
+    }
+}
